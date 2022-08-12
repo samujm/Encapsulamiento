@@ -38,4 +38,12 @@ public class Persona {
     public void setEliminado(boolean eliminado){
         this.eliminado = eliminado;
     }
+    
+    //metodo toString facilita imprimir el estado del objeto en cualquier momento, imprimir los valores de cada uno de los atributos que se agregen
+    
+    public String toString(){  //Regresa una cadena, convierte a una cadena cada uno de los atributos que tenemos en la clase
+        return "Persona [ nombre: " + this.nombre +
+                ", sueldo: " + this.sueldo +
+                ", eliminado: " + this.eliminado + "]";
+    }
 }

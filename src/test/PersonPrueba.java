@@ -8,14 +8,16 @@ import dominio.Persona;
 public class PersonPrueba {
     public static void main(String[] args) {
         Persona persona1 = new Persona("Juan", 5000.00, false);
-        System.out.println("persona1 = " + persona1.getNombre()); //Manda llamar el metodo get para obtener el nombre
+//        System.out.println("persona1 = " + persona1.getNombre()); //Manda llamar el metodo get para obtener el nombre
+        System.out.println("persona1: " + persona1.toString()); //IMPRIMIR EL OBJETO STRING
         persona1.setNombre("Juan Carlos");
         //persona1.nombre = "Juan Carlos"; Esto ya no se puede ya que el atributo es privado
         //System.out.println("nombre" + persona1.nombre); Esto ya no se puede ya que el atributo es privado
-        System.out.println("Persona1 nombre con cambio: " + persona1.getNombre());
-        System.out.println("Persona1 sueldo: " + persona1.getSueldo());
-        System.out.println("Persona1 eliminado: " + persona1.isEliminado());
-        
+//        System.out.println("Persona1 nombre con cambio: " + persona1.getNombre());
+//        System.out.println("Persona1 sueldo: " + persona1.getSueldo());
+//        System.out.println("Persona1 eliminado: " + persona1.isEliminado());
+          System.out.println("persona1: " + persona1); //IMPORTANTE!!!! NO ES NECESARIO COLOCAR TOSTRING CUANDO SE OCUPA PRINT O PRINTLN, SOLO SE PONE EL OBJETO PERSONA Y SI ESTA DEFINIDO EL METODO SE LLAMA DE MANERA AUTOMATICA 
+
         System.out.println("\n");
 
        
