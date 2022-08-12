@@ -15,5 +15,14 @@ public class PersonPrueba {
         System.out.println("Persona1 nombre con cambio: " + persona1.getNombre());
         System.out.println("Persona1 sueldo: " + persona1.getSueldo());
         System.out.println("Persona1 eliminado: " + persona1.isEliminado());
-    }
+        
+        System.out.println("\n");
+
+       
+        Persona persona2 = new Persona("Luis Carlos", 100000.00, true);
+        System.out.println("Persona2 nombre: " + persona2.getNombre());
+        persona2.setEliminado(false);
+        System.out.println("persona2 sueldo: " + persona2.getSueldo());
+        System.out.println("Persona2 cambia eliminado: " + persona2.isEliminado());
+    }      
 }
